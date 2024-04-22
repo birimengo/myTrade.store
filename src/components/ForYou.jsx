@@ -10,8 +10,8 @@ import eggs from '../assets/eggs.jpg'
 import electronics from '../assets/electroncs.jpg';
 import soda from '../assets/soda.jpg';
 import supermarket from '../assets/supermarket.jpg';
-import R from '/home/hamzah/myTrade/src/assets/R.jpeg';
-import cakes from '/home/hamzah/myTrade/src/assets/cakes.jpg'
+import R from '../assets/R.jpeg';
+import cakes from '../assets/cakes.jpg'
 const ForYou = () => {
     const [typing, setTyping] = useState(false);
     const [currentCard, setCurrentCard] = useState(null);
