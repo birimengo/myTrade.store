@@ -1,0 +1,142 @@
+
+
+
+/* ForYou.css */
+
+/* Style for the main container */
+.container-ForYou {
+  width: 97%;
+  height: 650px; /* Adjust height as needed */
+  overflow-y: auto; /* Add scrollbar when content overflows */
+  padding: 15px;
+  margin-top: 10px;
+
+  /* Customize scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: rgb(0, 132, 255) lightblue; /* Scrollbar color */
+
+  /* Display cards horizontally */
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap onto new lines */
+  gap: 15px; /* Add gap between cards */
+}
+
+/* Style for each card */
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+  padding: 5px;
+  width: calc(33.333% - 20px);
+  height: 257px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Style for the heading inside each card */
+.card h2 {
+  margin: 0;
+  color: rgb(99, 99, 99);
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  overflow: hidden; /* Hide overflow text */
+  position: relative; /* Position for pseudo-element */
+}
+
+/* Style for the subheading inside each card */
+.card h4 {
+  margin: 0px;
+  color: #007bff; /* Change the color to your desired color */
+  font-size: 1rem; /* Adjust the font size as needed */
+  position: relative; /* Position the subheading absolutely */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: lowercase;
+  margin-left: 100px;
+  padding-top: 0;
+}
+
+.verified {
+  display: flex;
+  margin-bottom: 0;
+  height: 30px;
+  border-radius: 20px;
+  padding-top: 0px;
+}
+
+.image {
+  width: 100%;
+  height: 70%; /* Adjust height to fit within the card */
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image img {
+  width: 100%; /* Ensure the image fills its container */
+  height: 100%; /* Ensure the image fills its container */
+  object-fit: cover;
+}
+
+/* Styling for the verified icon */
+.verified svg {
+  color: #007bff; /* Set color to blue */
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  text-align: right; /* Align the text to the left */
+  position: relative; /* Position the subheading absolutely */
+  padding-top: 0;
+}
+
+/* Styling for the image button */
+.image-button {
+  position: absolute;
+  top: 70%;
+  right: 1%;
+  background-color: transparent;
+  color:#ff7b00;
+  border: 1px solid #9dc6f3;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  padding: 4px 8px;
+}
+
+.image-button:hover {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  font-size: 32px; /* Adjust font size as needed */
+  color: #ff7b00; /* Adjust color as needed */
+  transition: transform 0.2s ease; /* Transition effect for icon size change */
+}
+
+.favorite-icon:hover {
+  transform: translate(-50%, -50%) scale(1.2); /* Scale the icon when hovered */
+}
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: calc(100% - 20px);
+    }
+}

@@ -1,0 +1,98 @@
+.categories-container {
+
+       /* Customize scrollbar */
+}
+
+
+.category-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    height: 700px; /* Set max height for the category card */
+    overflow-y: auto; /* Add vertical scrollbar when necessary */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    padding-inline-start: 30px;
+    margin-top: 10px;
+    
+    /* Customize scrollbar */
+    /* WebKit-based browsers (Chrome, Safari) */
+    &::-webkit-scrollbar {
+        width: 8px; /* Adjust width as needed */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgb(178, 181, 184); /* Thumb color */
+        border-radius: 8px; /* Rounded corners */
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: #858788; /* Hover state color */
+    }
+
+    &::-webkit-scrollbar-track {
+        background: lightblue; /* Track color */
+        border-radius: 8px; /* Rounded corners */
+    }
+}
+
+
+.category-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.category-list li:last-child {
+    border-bottom: none;
+}
+
+
+.category-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition on hover */
+    font-family:Georgia, 'Times New Roman', Times, serif; /* Font family */
+    color: #5f5f5f; /* Font color */
+    font-weight: 700; /* Font weight */
+}
+
+.category-list li:hover {
+    transform: scale(1.09);
+    /*Growonhover*/font-weight: bold;
+    /*Increasefontweightonhover*/color: #007bff;
+    /*Changefontcoloronhover*/
+    -webkit-transform: scale(1.09);
+    -moz-transform: scale(1.09);
+    -ms-transform: scale(1.09);
+    -o-transform: scale(1.09);
+}
+
+
+.CategoriesPopup {
+    position: absolute;
+    z-index: 9999; /* Adjust the z-index value as needed */
+    /* Add other styling properties */
+  }
+  
+  .PopupMenu {
+    position: absolute;
+    z-index: 9999; /* Adjust the z-index value as needed */
+    /* Add other styling properties */
+  }.favorite-popup {
+    position: absolute;
+    top: 25%; /* Adjust as needed */
+    right: calc(65% + 1px); /* Adjust as needed */
+    transform: translateY(-50%);
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    white-space: nowrap;
+    z-index: 999; /* Ensure the popup appears on top of other elements */
+}

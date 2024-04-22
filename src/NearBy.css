@@ -1,0 +1,184 @@
+/* NearBy.css */
+
+/* Container styles */
+.nearby-container {
+    max-width: 95%;
+    margin: 0 auto;
+     max-height: 700px; /* Set maximum height for the chat list */
+     overflow-y: scroll; /* Enable vertical scrolling */
+       padding: 10px; /* Add padding for content */
+       overflow-x: none;
+}
+
+/* Trader card styles */
+.trader-card {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    width: 100%;
+    
+ }
+
+/* Trader name styles */
+.trader-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Trader image styles */
+.trader-image img {
+ width: 300px;
+ height: 200px;
+ border-radius:20px ;
+ -webkit-border-radius:20px ;
+ -moz-border-radius:20px ;
+ -ms-border-radius:20px ;
+ -o-border-radius:20px ;
+}
+
+/* Trader details styles */
+.trader-details {
+    margin-bottom: 10px;
+}
+
+/* Trader location styles */
+.trader-location p {
+    font-weight: bold;
+}
+
+/* Trader status styles */
+.trader-status p {
+    font-weight: bold;
+}
+
+/* Visit trader button styles */
+.visit-trader-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+    font-weight:bold;
+    font-family:'Times New Roman', Times, serif;
+    color: #fff;
+height: 30px;
+align-self: end;
+margin-left: 20%;
+}
+
+.visit-trader-button:hover {
+    background-color: #0056b3;
+}
+
+.trader-collection{
+    display:flex;
+     display: grid;
+       margin: 10px; 
+           padding: 10px; 
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns */
+    grid-column-gap: 20px; /* Adjust the gap between columns */
+    grid-row-gap: 10px; /* Adjust the gap between rows */
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.75);
+}
+.description{
+
+    font-size:18px;
+    font-weight:900;
+    font-style:oblique;
+    color:rgb(105, 105, 105);
+}
+.about-trader{
+    font-size:18px;
+    font-weight:bolder;
+    font-family:'Times New Roman', Times, serif;
+    color:#007bff;
+}
+.trader-info{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.trader-status,
+.trader-rating,
+.trader-location,
+.trader-distance,
+.trader-details{
+    display:flex;
+    margin: 10px;
+    width:100%
+    
+}
+.status,
+.rating,
+.location,
+.distance,
+.goods{
+    font-size:18px;
+    font-weight:bolder;
+    font-family:'Times New Roman', Times, serif;
+    color:#007bff;
+}
+.s-online{
+    margin-top:25px;
+    margin-left: 60px;
+    color:green;
+    font-weight:bolder;
+    font-family:'Times New Roman', Times, serif;
+    font-size:18px;
+
+}
+.rate{
+    margin-left: 60px;
+    color:rgb(255, 153, 0);
+    font-weight:bolder;
+    font-family:'Times New Roman', Times, serif;
+    font-size:18px;
+}
+.locate{
+    margin-left: 40px;
+    color:rgb(105, 105, 105);
+    font-weight:bolder;
+    font-family:'Times New Roman', Times, serif;
+    font-size:18px;
+}
+.miles{
+    margin-left: 40px;
+    color:rgb(105, 105, 105);
+    font-weight:bolder;
+    font-family:'Times New Roman', Times, serif;
+    font-size:18px;
+}
+.good{
+    margin-left: 60px;
+    color:rgb(105, 105, 105);
+    font-weight:bolder;
+    font-family:'Times New Roman', Times, serif;
+    font-size:18px;
+}
+.buckets{
+    display: flex;
+}
+.t-name{
+    font-weight:bolder;
+    font-family:'Times New Roman', Times, serif;
+    font-size:18px;
+    color:#007bff;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .trader-collection {
+        grid-template-columns: repeat(1, 1fr); /* Adjust to single column layout */
+    }
+
+    .trader-info {
+        margin-left: 0; /* Remove margin for smaller screens */
+        margin-top: 0; /* Remove margin for smaller screens */
+    }
+
+    .visit-trader-button {
+        margin-left: 0; /* Remove margin for smaller screens */
+    }
+}

@@ -1,0 +1,193 @@
+/* chat-container styles */
+.chat-containerx {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    height: 100%;
+    padding-top: 10px;
+        background-color: #cdd7d8;
+
+}
+.avatarx{
+    margin-left: 50%;
+    margin-top: 100px;
+    border-radius: 50%; /* Make the avatar image perfectly round */
+    border: none; /* Remove any existing border */
+}
+
+
+
+
+
+
+/* messages styles */
+.messages {
+    flex: 1;
+    overflow-y: auto; /* Enable vertical scrolling for messages */
+width: 100%;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.sent-message, .received-message {
+    margin-bottom: 3px;
+    border-radius: 8px;
+    padding: 1px;
+    width:45%;
+}
+
+.sent-message {
+    margin-left: 650px;
+   text-align:right;
+    background-color: #535352; /* Change the background color of sent messages */
+}
+
+.received-message {
+    align-self:start;
+    background-color: #f5f4f4; /* Change the background color of received messages */
+}
+.sent-message p{
+    color: white;
+}
+.received-message p{
+
+    color: rgb(112, 110, 110);
+}
+.sent-message p, .received-message p{
+    font-size: 12px;
+    font-weight: 800;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+padding-inline: 10px;
+}
+/* message-input styles */
+.message-input {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    width: 90;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.message-input input:focus, .message-input input:active{
+    outline: none;
+    border-color: rgb(4, 180, 250);
+}
+.message-input input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 20px;
+    border: 1px solid #CCCCCC; /* Add border to the input field */
+}
+
+
+/* Input Text */
+.input-text {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 20px;
+    border: 1px solid #CCCCCC;
+    font-size: 14px;
+    outline: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    color: rgb(87, 87, 87);
+}
+
+/* Icons */
+.icon {
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 10px;
+
+}
+
+/* File Icon */
+.attach-file-icon {
+    color: #727070;
+    
+}
+
+/* Camera Icon */
+.camera-icon {
+    color: #727070;
+}
+
+/* Mic Icon */
+.mic-icon {
+    color: #727070;
+}
+.mic-icon2{
+    color:rgb(0, 140, 255);
+}
+
+/* Send Button */
+.send-buttonx {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #06a4ff;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.send-buttonx:hover {
+    background-color: #45a049;
+}
+.selected-file{
+font-size:15px;
+display: flex;
+}
+.remove-file{
+padding: 10px;
+border:none;
+font-size: 1rem;
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-weight: 800;
+color: #05b0ff;
+}
+
+.remove-file {
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    color: #05b0ff;
+}
+
+/* Media Queries for Small Screens */
+@media only screen and (max-width: 768px) {
+    .avatar img {
+        width: 40px; /* Adjust the avatar size for smaller screens */
+        height: 40px; /* Adjust the avatar size for smaller screens */
+    }
+    .sent-message{
+
+        margin-left: 200px;
+    }
+    .send-buttonx{
+
+        margin-left: -20px;
+    }
+    .sent-message {
+    margin-left: 200px;
+    background-color: #535352; /* Change the background color of sent messages */
+}
+  
+}
+
+.send-icon {
+    /* Add your styling here */
+    color: blue; /* Example color */
+    font-size: 24px; /* Example font size */
+    cursor: pointer;
+  }
+  

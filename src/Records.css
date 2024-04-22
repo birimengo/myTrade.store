@@ -1,0 +1,204 @@
+.record-container {
+    max-width: 98%;
+    margin: 0 auto;
+    margin-top:10px;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.75);
+      height: 660px; /* Set the desired height */
+    overflow-y: auto; /* Add vertical scrollbar if content exceeds the height */
+
+
+}
+
+
+
+.receipt {
+    border-radius: 5px;
+    padding: 4px;
+    margin-bottom: 20px;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-bottom: 20px;
+        box-shadow: 0 0 3px  rgba(0, 0, 0, 0.75);
+
+}
+
+
+.column {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+}
+
+.column h3 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight:bold;
+    font-style:oblique;
+    font-family:'Times New Roman', Times, serif;
+    color:#007bff;
+}
+
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 5px 0;
+   
+}
+
+.total {
+    font-weight: bold;
+    font-size:20px;
+    color:rgb(102, 100, 100);
+    margin-top: 4px;
+}
+/* Add these styles at the end of your existing CSS */
+
+.action-buttons {
+    margin-top: 20px;
+    margin-left:70%;
+}
+
+.accept-button,
+.delete-button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.accept-button {
+    background-color: #45a049;
+    color: white;
+    border: none;
+}
+
+.delete-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+   
+}
+.delete-button:hover{
+background-color: red;
+}
+.verified-receipt{
+    width: 25%;
+    margin-left:75%;
+}
+.ver-icon{
+    color:#007bff;
+    font-size: 12px;
+    display: flex;
+    font-weight:bold;
+    width: 20%;
+    margin-left: 8%;
+}
+
+
+.price,
+.quantity,
+.total-sum{
+color: rgb(122, 121, 121);
+font-size:18px;
+font-weight:900;
+font-style:italic
+}
+
+.item-name{
+    color:#535353;
+    font-size:20px;
+    font-weight:bold;
+    font-style:oblique;
+}
+.receipt-number{
+    color:#007bff;
+    font-style:italic
+}
+.trader{
+    font-style:oblique;
+    font-size:20px;
+    font-weight:bold;
+    color:#535353;
+}
+.date-receipt{
+    font-style:oblique;
+    font-size:16px;
+    font-weight:bold;
+    color:#535353;
+}
+.title-receipt{
+    color:#007bff;
+      position: sticky;
+    top: 0;
+    background-color: #fff; /* Background color for better visibility */
+    z-index: 1; /* Ensure it appears above other elements */
+    padding: 10px 0; /* Add padding for spacing */
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+    .columns {
+        flex-wrap: nowrap; /* Prevent columns from wrapping */
+    }
+
+    .column {
+        flex-basis: 100%; /* Make columns take full width */
+        margin-bottom: 10px; /* Add spacing between columns */
+    }
+
+    .action-buttons {
+        margin-left: 50%; /* Reset margin */
+    }
+
+    .item-name{
+        font-size:16px;
+    }
+    .price,
+    .quantity,
+    .total-sum{
+        font-size:16px;
+        font-weight:bold;
+    }
+    .receipt-number{
+        font-size:14px;
+    }
+    .trader{
+        font-size:14px;
+    }
+    .date-receipt{
+        font-size:12px;
+    }
+    .title-receipt{
+        font-size:14px;
+    }
+    .title-receipt{
+        font-size:16px;
+    }
+    .trader{
+        font-size:16px;
+    }
+    .date-receipt{
+        font-size:14px;
+    }
+}

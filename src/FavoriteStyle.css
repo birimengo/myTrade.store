@@ -1,0 +1,119 @@
+/* Default styles */
+
+.favorite-container {
+    max-width: 600px;
+    margin-top: 15px;
+    margin-inline: auto;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.75);
+    height: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.favorite-list-container {
+    max-height: 500px; /* Adjust height as needed */
+    overflow-y: auto;
+}
+
+.favorite-list {
+    list-style: none;
+    padding: 0;
+    color: rgb(104, 104, 104);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.favorite-person {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.person {
+    flex-grow: 1;
+}
+
+.visit-button,
+.remove-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.visit-button,
+.remove-button {
+    margin-inline: 5px;
+}
+
+.visit-button {
+    background-color: #4caf50;
+    color: white;
+    border-radius: 10px;
+}
+
+.remove-button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+}
+
+.visit-button:hover,
+.remove-button:hover {
+    background-color: #45a049;
+}
+
+.remove-button:hover {
+    background-color: #f44336;
+}
+
+.favorite-people {
+    margin-top: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #007bff;
+}
+
+.search-favorite {
+    width: 100%;
+}
+
+.favorite-search {
+    outline: none;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    font-style: oblique;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .favorite-container {
+        margin-inline: 5%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .favorite-container {
+        padding: 10px;
+    }
+
+    .favorite-people,
+    .search-favorite {
+        position: static;
+        background-color: transparent;
+        padding: 0;
+        z-index: auto;
+    }
+}

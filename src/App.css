@@ -1,0 +1,483 @@
+/* TopNavBar css */
+.TopBox{
+  display: block;
+  width: 100%;
+   z-index: 1000;
+   top:o;
+}
+
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(86, 176, 206);
+  color: #fff;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 22px 0 rgba(0, 0, 0, 0.21);
+
+}
+
+.mytrade {
+  font-size: 1.5rem;
+}
+
+.SearchIcon,
+.BrightnessHigh-low,
+.NotificationsIcon,
+.AccountCircleIcon,
+.TextsmsIcon {
+  padding: 0 10px;
+}
+
+.SearchIcon svg,
+.BrightnessHigh-low svg,
+.NotificationsIcon svg,
+.AccountCircleIcon svg,
+.TextsmsIcon svg {
+  fill: #fff;
+  width: 24px;
+  height: 24px;
+}
+
+.BrightnessHigh-low {
+  display: flex;
+}
+
+.BrightnessHigh-low svg {
+  margin-right: 10px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .mytrade {
+    font-size: 1rem; /* Adjust the font size as needed for smaller screens */
+  }
+}
+
+/* Navigation*/
+.Navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  color: #fff;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 22px 0 rgba(0, 0, 0, 0.21);
+}
+
+.Navigation button {
+  font-weight: bold; /* Make the button text bold */
+  font-size: 1rem; /* Increase the font size of the button text */
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  color:rgb(99, 99, 99);
+
+
+}
+
+/* Styles for button hover and active states */
+.Navigation button:hover,
+.Navigation button:focus,
+.Navigation button:active {
+  transform: scale(1.1); /* Grow the button when hovered or clicked */
+}
+
+.Navigation button:hover::after,
+.Navigation button:focus::after,
+.Navigation button:active::after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid rgb(86, 176, 206);; /* Set the underline color to blue */
+}
+.bottombox {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; /* Align items vertically in the center */
+  background-color:white;
+  box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -10px 22px 0 rgba(0, 0, 0, 0.20);
+}
+
+.iconSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px; /* Adjust padding as needed */
+  transition: all 0.3s ease; /* Apply transition for smooth animation */
+}
+
+.icon {
+  margin-bottom: 5px; /* Add some space between the icon and the text */
+  color:grey;
+}
+
+.icon:hover {
+  transform: scale(1.5);
+  /*Growtheicononhover*/color: #007bff;
+  /*Changecoloronhover*/-webkit-transform: scale(2.2);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+}
+
+h6 {
+  margin: 0; /* Remove default margin of h6 */
+  font-size:1rem;
+  color:rgb(66, 66, 66);
+}
+/* PopupMenu */
+.PopupMenu {
+  position: absolute;
+  top: 50px; /* Adjust this value based on your design */
+  right: 0; /* Position the popup menu on the right side */
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1000;
+  width: 200px; /* Default width */
+  text-align: center; /* Center the list items horizontally */
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 22px 0 rgba(0, 0, 0, 0.21);
+}
+
+.PopupMenu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.PopupMenu li,
+.Register,
+.AboutUs,
+.TalkToUs,
+.Login {
+  padding: 5px 0;
+  text-align: left; /* Align list items to the left */
+  color:rgb(99, 99, 99);
+  font-size:1.3rem;
+  font-weight:900;
+    text-decoration:none;
+
+}
+
+/* PopupMenu */
+.PopupMenu {
+  position: absolute;
+  top: 50px; /* Adjust this value based on your design */
+  right: 0; /* Position the popup menu on the right side */
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1000;
+  width: 200px; /* Default width */
+  text-align: center; /* Center the list items horizontally */
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 22px 0 rgba(0, 0, 0, 0.21);
+}
+
+.PopupMenu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.PopupMenu Link:hover {
+  color:#56b0ce;
+  /*background-color:rgb(86, 176, 206); /* Change background color on hover */
+}
+
+
+
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .PopupMenu {
+    width: 100px; /* Reduce width on small screens */
+  }
+
+}
+
+/* sigup */
+
+/* Form container */
+/* Form container */
+/* Nationality dropdown */
+.Nationality select,
+.Location select,
+.City select,
+.PhoneNumber input {
+  width: calc(100% );
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #5c5b5b;
+  border: 2px solid #bebdbd;
+
+}
+
+/* Placeholder for dropdown */
+.Nationality select::placeholder,
+.Location select::placeholder,
+.City select::placeholder {
+  color: #999;
+}
+
+/* Styling for dropdown options */
+.Nationality select option,
+.Location select option,
+.City select option {
+  font-size: 1rem;
+  font-weight: 700;
+  color:#424141 ;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+width: 30%;
+}
+
+
+.addphoto {
+  background-color: #007bff; /* Blue color, you can change it to your preferred color */
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width:30%;
+  font-weight: 900;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  font-size: 1.2rem;
+}
+@media only screen and (max-width: 600px) {
+.addphoto{
+
+  background-color: #007bff; /* Blue color, you can change it to your preferred color */
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width:30%;
+  font-weight: 900;
+  margin-top: 27px;
+  margin-bottom: 40px;
+  font-size: 0.9rem;
+}
+}
+
+.addphoto:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+.FormContainer {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  height: 100vh; /* Set height to 100% of viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wrap{
+  display: flex;
+}
+/* Heading */
+.FormContainer h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Photo container */
+.photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #ccc;
+  margin: 0 auto 20px;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+.photo{
+  width: 20%;
+  height: 70px;
+}
+}
+
+
+
+/* Form inputs */
+.FormContainer input[type="text"],
+.FormContainer input[type="email"],
+.FormContainer input[type="tel"],
+.FormContainer input[type="password"],
+.FormContainer input[type="file"] {
+  width: calc(100% - 24px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #bebdbd;
+  border-radius: 5px;
+  font-size:1.2rem;
+  font-weight:600;
+}
+
+/* Input placeholder */
+.FormContainer input::placeholder {
+  color: #5c5b5b;
+}
+
+/* Submit button */
+.FormContainer button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.FormContainer button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Google sign up */
+.GoogleSignUp {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.GoogleSignUp button {
+  background-color: #56b0ce;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.GoogleSignUp button:hover {
+  background-color:#56b0ce;
+}
+
+/* Login link */
+.FormContainer p {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+.FormContainer p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.FormContainer p a:hover {
+  text-decoration: underline;
+}
+
+
+/* login */
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-container button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.login-container button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.GoogleLogin {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.GoogleLogin button {
+  background-color: #db4437; /* Google Red */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.GoogleLogin button:hover {
+  background-color: #c1351c; /* Darker shade of Google Red on hover */
+}
+.GoogleLogin {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.GoogleLogin button {
+  background-color: #db4437; /* Google Red */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.GoogleLogin button:hover {
+  background-color: #c1351c; /* Darker shade of Google Red on hover */
+}
+
+
