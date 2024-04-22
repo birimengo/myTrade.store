@@ -6,7 +6,7 @@ import VerifiedIcon from '@mui/icons-material/Verified';
 import maxresdefault from '../assets/maxresdefault.jpg';
 import plastic from '../assets/plastic.jpg';
 import cement from '../assets/cement.jpg';
-import eggs from '/home/hamzah/myTrade/src/assets/eggs.jpg'
+import eggs from '../assets/eggs.jpg'
 import electronics from '../assets/electroncs.jpg';
 import soda from '../assets/soda.jpg';
 import supermarket from '../assets/supermarket.jpg';
