@@ -160,15 +160,20 @@ const ChatList = () => {
   return (
     <div>
       <TopNavbar />
+        <div className='chats-l'>
+               <h2 className='chat-l'>Chat List</h2>
+
+        </div>
       <div className='chat-container'>
-        <h2>Chat List</h2>
-        <input type='text' placeholder='Search....' className='searchx' />
+      
         <div className='chat-list'>
+                  <input type='text' placeholder='Search....' className='searchx' />
+
           {chatData.map(chat => (
             <Link to={`/chat/${chat.id}`} key={chat.id} className='chat-linkx' style={{ textDecoration: 'none' }}>
               <div className={`chat ${chat.active ? 'active' : ''}`}>
                 <img src={chat.avatar} alt='Avatar' className='avatar' />
-                <div className='status'>{chat.active ? '● Active' : '○ Offline'}</div>
+                <div className='status'>{chat.active ? '● Active' : '○'}</div>
                 <div className='chat-info'>
                   <div className='name'>{chat.name}</div>
                   <div className='message'>{chat.message}</div>

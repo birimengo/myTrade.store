@@ -1,67 +1,79 @@
 /* App.css */
 
-.chat-container{
+.chat-container {
   margin-inline: 25%;
-  height: 100vh;;
-        box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
-align-items: center;
-    border-radius: 10px;
-    background-color: #cdd7d8;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color:#666;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+  align-items: center;
+  border-radius: 10px;
+  background-color: #cdd7d8;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #666;
+  overflow-y: scroll;
+  padding-top: 180px; /* Add top padding to create space */
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
-      }
-  
-  h2 {
-    margin-bottom: 20px;
-    font-size: 700;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color: #007bff;
-  }
-  
-  .search {
-    width: 90%;
-    margin-top: 30px;
-    padding: 10px;
-    margin-inline: 15px;
-    margin-bottom: 20px;
-    border: 2px solid #8d8d8d;
-    border-radius: 5px;
-  }
- 
-  /* Style for when input is focused or clicked */
+.chat-l {
+  margin-bottom: 20px;
+  font-size: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #007bff;
+  padding: 20px;
+  position: fixed;
+  width: 100%; /* Make the title span full width */
+  text-align: center; /* Center the title */
+}
+
+.searchx {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #09a9f3;
+  border-radius: 25px;
+  top: 140px;
+   /* Adjust top position */  /* Other styles */
+
+}
+
+.searchx:focus {
+  border-color: #007bff; /* Change border color when focused */
+  border-width: 1px; /* Increase border width when focused */
+  outline: none; /* Remove default outline */
+}
+
+/* Style for when input is focused or clicked */
 .search:focus,
 .search:active {
   border-color: #007bff50; /* Change border color when focused or clicked */
   outline: none; /* Remove default outline */
 }
-  
-  .chat-list{
-    width: 95%;
-    height: 100hv;
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto; /* Enable vertical scroll if content exceeds the maximum height */
-  
-  
+
+.chat-list {
+  width: 95%;
+  height: 70vh; /* Adjust height */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Enable vertical scroll if content exceeds the maximum height */
 }
-  
-  .chat {
-    display: flex;
-    align-items: center;
-    padding: 6px;
-    border-bottom: 1px solid #ccc;
-        margin-top: 6px;
-        width: 95%;
-  }
-  
-  .chat.active {
-    background-color: #f0f0f0;
-  }
-  
-  
+
+.chat {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  border-bottom: 1px solid #ccc;
+  margin-top: 6px;
+  width: 95%;
+}
+
+.chat.active {
+  background-color: #f0f0f0;
+}
+
 .avatar-container {
   position: relative; /* Set the position to relative for the avatar container */
 }
@@ -71,57 +83,55 @@ align-items: center;
   height: 50px;
   border-radius: 50%;
   margin-right: 10px;
-border: 2px solid #007bff6b; /* Set color to blue */
-;
-}
-  
-  .chat-info {
-    flex-grow: 1;
-  }
-  
-  .name {
-    font-weight: bold;
-    margin-left:-50px;
-    margin-bottom: 10px;
-    color: rgb(0, 0, 0);
-    font-size: 1.2rem;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-  }
-  
-  .last-message {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 10px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-  }
-  
-  .time {
-    font-size: 12px;
-    color: #666;
-  }
-  .status{
-    padding-top:18px;
-    font-size: 12px;
-    color: #666;
-    font-weight:900;
-    font-family:Georgia, 'Times New Roman', Times, serif
-  }
-  .message{
-    padding-left: 40px;
-    font-family
-    :Georgia, 'Times New Roman', Times, serif;
-    font-size: 1rem;
-    font-weight: 700;
-    color:#666;
-  }
-  .chat.active .status {
-    color: green; /* Green color for active symbol */
- font-family:Georgia, 'Times New Roman', Times, serif;
- font-weight:900;
- font-size: 12px;
-
+  border: 2px solid #007bff6b; /* Set color to blue */
 }
 
+.chat-info {
+  flex-grow: 1;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.last-message {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.time {
+  font-size: 12px;
+  color: #666;
+}
+
+.status {
+  padding-top: 18px;
+  font-size: 12px;
+  color: #666;
+  font-weight: 900;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.message {
+  padding-left: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #666;
+}
+
+.chat.active .status {
+  color: green; /* Green color for active symbol */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 900;
+  font-size: 12px;
+}
 
 /* Media queries for responsiveness */
 @media only screen and (max-width: 768px) {
@@ -130,8 +140,9 @@ border: 2px solid #007bff6b; /* Set color to blue */
     margin-inline: 10px; /* Adjust margin for small screens */
   }
 
-  .search {
+  .searchx {
     width: 80%; /* Adjust input width */
+    right: 10%; /* Adjust right position */
   }
 
   .chat {
@@ -152,4 +163,8 @@ border: 2px solid #007bff6b; /* Set color to blue */
   .status {
     font-size: 0.8rem; /* Decrease font size */
   }
+}
+.chats-l{
+  padding-top: 70px;
+  position: fixed;
 }
