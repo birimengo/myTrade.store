@@ -4,7 +4,7 @@
 .nearby-container {
     max-width: 95%;
     margin: 0 auto;
-     max-height: 700px; /* Set maximum height for the chat list */
+     height: 860px; /* Set maximum height for the chat list */
      overflow-y: scroll; /* Enable vertical scrolling */
        padding: 10px; /* Add padding for content */
        overflow-x: none;
@@ -181,4 +181,15 @@ margin-left: 20%;
     .visit-trader-button {
         margin-left: 0; /* Remove margin for smaller screens */
     }
+    /* Trader image styles */
+.trader-image img {
+    width: 100%; /* Make the image width 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px;
+}
+.description{
+          box-shadow: 0 3px 14px rgba(0, 0, 0, 0.65);
+          padding: 15px;
+
+}
 }
